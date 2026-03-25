@@ -10,7 +10,20 @@ namespace CyberAwernessBot
     {
         public void Start()
         {
-            Console.WriteLine("System: Bot is initializing...");
+            DisplayLogo();
+            Console.WriteLine("Welcome to the Cyber Awarness Bot!");
+        }
+        public void DisplayLogo()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine(@"
+  _____            ____  
+ / ____|    /\    |  _ \ 
+| |        /  \   | |_) |
+| |       / /\ \  |  _ < 
+| |____  / ____ \ | |_) |
+ \_____|/_/    \_\|____/");
+            Console.ResetColor();
         }
     }
 }
